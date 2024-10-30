@@ -116,6 +116,7 @@ class WithdrawPageState extends State<WithdrawPage> {
       ),
       bottomNavigationBar: InkWell(
         onTap: () async {
+          double amt = double.parse(walletAmount) - 1000;
           DateTime today = DateTime.now();
           if (_amountController.text.isEmpty) {
             toastshowDefaultSnackbar(
@@ -177,6 +178,14 @@ class WithdrawPageState extends State<WithdrawPage> {
             // }
             else {
               if (_amountController.text == walletAmount) {
+                EasyLoading.dismiss();
+                toastshowDefaultSnackbar(
+                    context,
+                    'Maintain min 1000 in your wallet. You can\'t redeem it'.tr,
+                    false,
+                    primaryColor);
+              }
+              else if(double.parse(_amountController.text) > amt) {
                 EasyLoading.dismiss();
                 toastshowDefaultSnackbar(
                     context,
