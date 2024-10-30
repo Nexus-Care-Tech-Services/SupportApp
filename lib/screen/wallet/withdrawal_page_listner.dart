@@ -176,34 +176,44 @@ class WithdrawPageState extends State<WithdrawPage> {
             //       primaryColor);
             // }
             else {
-              WithdrawalModel? withdrawPage =
-              await APIServices.withdrawalWalletApi(
-                  upiIDController.text,
-                  _amountController.text,
-                  bankAccountController.text,
-                  ifsccodeController.text,
-                  bankNameController.text);
-
-              EasyLoading.dismiss();
-              if (mounted) {
+              if (_amountController.text == walletAmount) {
+                EasyLoading.dismiss();
                 toastshowDefaultSnackbar(
-                    context, withdrawPage?.message, false, primaryColor);
+                    context,
+                    'Maintain min 1000 in your wallet. You can\'t redeem it'.tr,
+                    false,
+                    primaryColor);
               }
+              else {
+                WithdrawalModel? withdrawPage =
+                await APIServices.withdrawalWalletApi(
+                    upiIDController.text,
+                    _amountController.text,
+                    bankAccountController.text,
+                    ifsccodeController.text,
+                    bankNameController.text);
 
-              log('withdrawPage: ${withdrawPage?.toJson()}',
-                  name: 'withdrawPage');
-
-              if (withdrawPage?.status == true) {
                 EasyLoading.dismiss();
+                if (mounted) {
+                  toastshowDefaultSnackbar(
+                      context, withdrawPage?.message, false, primaryColor);
+                }
 
-                if (!mounted) return;
-                toastshowDefaultSnackbar(
-                    context, withdrawPage?.message, false, primaryColor);
-              } else if (withdrawPage?.status == true &&
-                  withdrawPage?.message == 'withdrawal request send'.tr) {
-                EasyLoading.dismiss();
-                if (!mounted) return;
-                showWithdrawalDialog(context, withdrawPage?.message ?? '');
+                log('withdrawPage: ${withdrawPage?.toJson()}',
+                    name: 'withdrawPage');
+
+                if (withdrawPage?.status == true) {
+                  EasyLoading.dismiss();
+
+                  if (!mounted) return;
+                  toastshowDefaultSnackbar(
+                      context, withdrawPage?.message, false, primaryColor);
+                } else if (withdrawPage?.status == true &&
+                    withdrawPage?.message == 'withdrawal request send'.tr) {
+                  EasyLoading.dismiss();
+                  if (!mounted) return;
+                  showWithdrawalDialog(context, withdrawPage?.message ?? '');
+                }
               }
             }
           }
