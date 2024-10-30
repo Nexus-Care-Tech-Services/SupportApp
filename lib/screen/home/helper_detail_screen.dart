@@ -509,10 +509,21 @@ class _HelperDetailScreenState extends State<HelperDetailScreen>
             ListnerDisplayModel model = await APIServices.getListnerDataById(
                 listenerDisplayModel1!.data![0].id!.toString());
             if (model.data![0].busyStatus == 0) {
+              Map<String, String> formData = {
+                "from_id": SharedPreference.getValue(PrefConstants.MERA_USER_ID),
+                "to_id": widget.listnerId.toString(),
+                "channel_name": data["room_id"],
+                "user_id": data["agora_uid_one"],
+                "token": data["token_one"],
+              };
+
               await APIServices.getBusyOnline(
                   true, listenerDisplayModel1?.data![0].id!.toString());
               await APIServices.getBusyOnline(
                   true, SharedPreference.getValue(PrefConstants.MERA_USER_ID));
+
+              // response = await APIServices.handleRecording(
+              //     formData, APIConstants.START_RECORDING);
 
               EasyLoading.dismiss();
 
@@ -587,10 +598,21 @@ class _HelperDetailScreenState extends State<HelperDetailScreen>
         ListnerDisplayModel model = await APIServices.getListnerDataById(
             listenerDisplayModel1!.data![0].id!.toString());
         if (model.data![0].busyStatus == 0) {
+          Map<String, String> formData = {
+            "from_id": SharedPreference.getValue(PrefConstants.MERA_USER_ID),
+            "to_id": widget.listnerId.toString(),
+            "channel_name": data["room_id"],
+            "user_id": data["agora_uid_one"],
+            "token": data["token_one"],
+          };
+
           await APIServices.getBusyOnline(
               true, listenerDisplayModel1?.data![0].id!.toString());
           await APIServices.getBusyOnline(
               true, SharedPreference.getValue(PrefConstants.MERA_USER_ID));
+
+          // response = await APIServices.handleRecording(
+          //     formData, APIConstants.START_RECORDING);
 
           EasyLoading.dismiss();
 

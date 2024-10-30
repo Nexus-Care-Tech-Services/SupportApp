@@ -47,8 +47,6 @@ class ListnerInboxScreenState extends State<ListnerInboxScreen> {
   ListenerNotification? _listenerNotification;
   ListnerDisplayModel? listenerDisplayModel1;
 
-  List<String> tokens = [];
-
   SupportChatModel? supportChatModel;
   int chatCount = 0;
   dynamic response;
@@ -102,10 +100,6 @@ class ListnerInboxScreenState extends State<ListnerInboxScreen> {
     loadData();
     apiSupportChat();
     getNotifications();
-
-    Future.delayed(const Duration(seconds: 5),() {
-      getDeviceTokens();
-    });
   }
 
   @override
@@ -146,15 +140,6 @@ class ListnerInboxScreenState extends State<ListnerInboxScreen> {
     }
   }
 
-  void getDeviceTokens() async {
-    if(_listenerNotification!.notifications!.isNotEmpty) {
-      for(int i=0; i<_listenerNotification!.notifications!.length; i++) {
-        ListnerDisplayModel model = await APIServices.getUserDataById(_listenerNotification!.notifications![i].userId!.toString());
-        tokens.add(model.data![0].deviceToken!);
-      }
-    }
-  }
-
   onCallPlaced(String uid, String? deviceToken, String listenerId) async {
     await AppUtils.handleMic(Permission.microphone, context);
     if (await Permission.microphone.isGranted) {
@@ -175,6 +160,17 @@ class ListnerInboxScreenState extends State<ListnerInboxScreen> {
           await APIServices.getBusyOnline(true, model.data![0].id!.toString());
           await APIServices.getBusyOnline(true, uid);
         }
+
+        Map<String, String> formData = {
+          "from_id": SharedPreference.getValue(PrefConstants.MERA_USER_ID),
+          "to_id": listenerId,
+          "channel_name": data["room_id"],
+          "user_id": data["agora_uid_one"],
+          "token": data["token_one"],
+        };
+
+        // response = await APIServices.handleRecording(
+            // formData, APIConstants.START_RECORDING);
 
         EasyLoading.dismiss();
 
@@ -243,6 +239,17 @@ class ListnerInboxScreenState extends State<ListnerInboxScreen> {
                   true, model.data![0].id!.toString());
               await APIServices.getBusyOnline(true, uid);
             }
+
+            Map<String, String> formData = {
+              "from_id": SharedPreference.getValue(PrefConstants.MERA_USER_ID),
+              "to_id": listenerId,
+              "channel_name": data["room_id"],
+              "user_id": data["agora_uid_one"],
+              "token": data["token_one"],
+            };
+
+            // response = await APIServices.handleRecording(
+                // formData, APIConstants.START_RECORDING);
 
             EasyLoading.dismiss();
 
