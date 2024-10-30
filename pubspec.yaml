@@ -1,0 +1,153 @@
+name: support
+description: Support
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 0.5.6+53
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # A
+  agora_rtc_engine: ^6.3.2
+  adaptive_theme: ^3.3.0
+  avatar_glow: ^2.0.2
+  audioplayers: ^4.1.0
+  agora_chat_sdk: ^1.2.0
+
+  # B
+
+  # C
+  cupertino_icons: ^1.0.5
+  cached_network_image: ^3.2.3
+  cloud_firestore: ^4.8.1
+  carousel_slider: ^4.2.1
+  card_swiper: ^3.0.1
+  camera: ^0.10.5+9
+  comment_box: ^0.0.18
+  cached_video_player_plus: ^3.0.3
+
+  # D
+  dio: ^5.2.1+1
+  device_info_plus: ^9.0.2
+  dotted_border: ^2.1.0
+
+  # E
+  extended_image: ^8.0.2
+
+  # F
+  firebase_core: ^2.4.1
+  firebase_auth: ^4.4.2
+  flutter_rating_bar: ^4.0.1
+  firebase_messaging: ^14.6.3
+  flutter_easyloading: ^3.0.5
+  flutter_local_notifications: ^15.0.0
+  firebase_crashlytics: ^3.0.9
+  firebase_storage: ^11.0.10
+  fluttertoast: ^8.2.1
+  flutter_windowmanager: ^0.2.0
+  flutter_phoenix: ^1.1.1
+  flutter_ringtone_player: ^3.2.0
+  flutter_app_version_checker: ^0.3.2
+  file_picker: ^6.1.1
+  flutter_staggered_animations: ^1.1.1
+  firebase_analytics: ^10.8.0
+  flutter_reaction_button: ^3.0.0+3
+  floating: ^2.0.2
+  flutter_stripe: ^9.5.0+1
+  flutter_cashfree_pg_sdk: ^2.0.18+21
+  fcm_channels_manager: ^0.0.7
+
+  # G
+  google_fonts: ^4.0.3
+  get: ^4.6.5
+  get_time_ago: ^1.2.4
+  google_sign_in: ^6.1.5
+  googleapis: ^13.1.0
+  googleapis_auth: ^1.4.1
+
+  # H
+  http: ^0.13.5
+
+  # I
+  intl_phone_field: ^3.1.0
+  image_picker: ^1.0.0
+  intl: ^0.18.1
+  in_app_review: ^2.0.8
+  image_cropper: ^4.0.1
+  image_gallery_saver: ^2.0.3
+  in_app_update: ^4.2.3
+
+  # J
+  just_audio: ^0.9.32
+
+  #L
+  loading_animation_widget: ^1.2.1
+
+  #O
+
+  # P
+  pin_code_fields: ^8.0.1
+  permission_handler: ^10.2.0
+  percent_indicator: ^4.2.3
+  pull_to_refresh: ^2.0.0
+  persistent_bottom_nav_bar: ^5.0.2
+
+  # R
+  rive: ^0.13.4
+
+  # S
+  shared_preferences: ^2.1.0
+  stop_watch_timer: ^2.0.0
+  shimmer: ^3.0.0
+  share_plus: ^7.0.2
+  swipe_to: ^1.0.2
+  scratcher: ^2.3.0
+  story_view: ^0.16.0
+  syncfusion_flutter_charts: ^20.4.49
+
+  #  T
+  timeago_flutter: ^3.4.0
+
+  #  U
+  url_launcher: ^6.1.10
+
+  # V
+  vibration: ^1.8.4
+  video_player: ^2.7.2
+  video_thumbnail: ^0.5.3
+
+  #  W
+
+dependency_overrides:
+  package_info_plus: any
+  stripe_android: "9.5.0+1"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+  flutter_lints: ^2.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/
+    - assets/mood/
+    - assets/sound/
+    - assets/emoji/
