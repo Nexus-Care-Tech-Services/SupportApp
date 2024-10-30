@@ -1,0 +1,176 @@
+{
+  "project_info": {
+    "project_number": "766096269533",
+    "firebase_url": "https://support-stress-free-default-rtdb.firebaseio.com",
+    "project_id": "support-stress-free",
+    "storage_bucket": "support-stress-free.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766096269533:android:a5b1e49076aaf5b9f0bb34",
+        "android_client_info": {
+          "package_name": "com.support2heal.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766096269533-1g2lvckvsloec0132t4a4d889l2torsh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "f68e8313b8ca95d7c4de3c7762b3a001c52364b0"
+          }
+        },
+        {
+          "client_id": "766096269533-5qtahssi50mkt5jq8br485k80i3rcktt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "5be2f0050395d37b36f408a44805f8f9dd855822"
+          }
+        },
+        {
+          "client_id": "766096269533-7jujj31557kpq6fdl7s6sium9cm6objt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "f16d726ca74531c459206e31d5aa2ecd3cbc1aa4"
+          }
+        },
+        {
+          "client_id": "766096269533-98lgr9t7ojj3c55g1b8fkflv57jj9nqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "ed486228c298269cb610056b623fceb39bb670e4"
+          }
+        },
+        {
+          "client_id": "766096269533-9es4nr1ngmvh544jfps4j60p9njgluk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "c592203bce8bdc267b2ed5fb6deb26dda1a731d9"
+          }
+        },
+        {
+          "client_id": "766096269533-bmkgld32e7eus2ugkjhp3bincs23v4ip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "351b17131b1d61090ad13b618713600f49198ec1"
+          }
+        },
+        {
+          "client_id": "766096269533-cq4ka7sh61nvo0j7ji8iq83hc7cmt4c7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "7b78696935c5747d5a7a6d00bf81ac599bcf679b"
+          }
+        },
+        {
+          "client_id": "766096269533-f7ivcqfum1rqidshk8ugn8tev4pge725.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "e69b343ee584b15068c9f5e92efd351788d9cbc2"
+          }
+        },
+        {
+          "client_id": "766096269533-gceftqhm3bqcja744bntogsttn5qv78r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "8f3b1f9e5313afcd84f6af6263b2f8d6e6758bdc"
+          }
+        },
+        {
+          "client_id": "766096269533-ibe32m3j0v93gs31e91m6a5mbqbuumqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "88bf8f1a04dc5285661881309a4fc344b3a53a91"
+          }
+        },
+        {
+          "client_id": "766096269533-k6283m1kvf9rkto8c4iiq38lg4bo3h2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "af37d8728d9e59cc42e2678205de8a5b008ce59a"
+          }
+        },
+        {
+          "client_id": "766096269533-lf2knu0hg603rr77nfh8n3as99r42ujh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "85df6a406d6774a02afdc94547fdf3a05433d1d4"
+          }
+        },
+        {
+          "client_id": "766096269533-n624c23r32dnq336dn035jr8cmo08l90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "bcff7f0d7fee703a361e3500e5c9362befbf5782"
+          }
+        },
+        {
+          "client_id": "766096269533-ngcfch1tirbjc47tfnk0nefdtss0cie5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "79fd3af6aeda4a5e2681094b7d33977b7c8eed60"
+          }
+        },
+        {
+          "client_id": "766096269533-oa6ddmdnl4tmotpo7iboh7ub7ncfhi5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "59bd892ec81e09bbc34a6abc642a9fe092d57771"
+          }
+        },
+        {
+          "client_id": "766096269533-smpp33t3ei42ehsvtpcdaq4n2okqpltb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.support2heal.app",
+            "certificate_hash": "4d6534554ed7e48373d16d48eba44ef320bf52bc"
+          }
+        },
+        {
+          "client_id": "766096269533-vgl43sp0p449rbu812t1asssb5a54uns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwioUg6DdCbxf_V5wWmXYaEI1bZwr7nUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766096269533-k0jascod7pklgvmaaubemuchul30vb3h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "766096269533-1pqtt56tqrl6k8d28gfd0gff2rfauk2i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.support2heal.app",
+                "app_store_id": "6470670901"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
